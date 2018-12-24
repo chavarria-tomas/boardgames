@@ -13,9 +13,9 @@ retry_time = 30
 def print_map(label, map):
 	print(label)
 	for key, value in map.items():
-		print("\n\t"+key+":")
+		print("\n\t"+key+": " + len(value))
 		for game in value:
-			print("\t\t" + game)
+			print("\t\t" + game + "\t" + key)
 	print("\n\n")
 
 def resolve_redirects(url):
