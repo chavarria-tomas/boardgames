@@ -4,7 +4,7 @@ import time
 
 #################################################
 
-username = "YourUsernameHere"
+username = "YouUsernameHere"
 retry_time = 30
 
 #################################################
@@ -13,7 +13,7 @@ retry_time = 30
 def print_map(label, map):
 	print(label)
 	for key, value in map.items():
-		print("\n\t"+key+": " + len(value))
+		print("\n\t"+key+": " + str(len(value)))
 		for game in value:
 			print("\t\t" + game + "\t" + key)
 	print("\n\n")
